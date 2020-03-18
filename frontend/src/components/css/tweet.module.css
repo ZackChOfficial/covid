@@ -1,0 +1,9 @@
+.tweet {
+  float: left;
+  margin-top: 40px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (min-width: 1400px) {
+}

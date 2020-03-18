@@ -1,0 +1,27 @@
+.phonecard {
+  font-size: 20px;
+  padding: 30px 15px 60px 10px;
+  position: relative;
+  text-align: right;
+  color: #01a3a4;
+  /* background-color: aqua; */
+}
+
+.teleicon {
+  padding: 0 0px 0 10px;
+  font-size: 36px;
+  float: right;
+}
+
+.text {
+  display: inline-block;
+  float: right;
+  padding: 7px 5px;
+  color: #57616a;
+}
+.tele {
+  padding: 5px 10px;
+  font-size: 24px;
+  float: right;
+  cursor: pointer;
+}
