@@ -1,0 +1,12 @@
+.empty {
+  width: 100%;
+  float: left;
+  height: 60px;
+  background-color: #01a3a4;
+}
+
+@media only screen and (max-width: 814px) {
+  .empty {
+    display: none;
+  }
+}

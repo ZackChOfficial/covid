@@ -1,0 +1,70 @@
+.navbar {
+  display: none;
+}
+
+@media only screen and (max-width: 814px) {
+  .navbar {
+    display: block;
+    width: 100%;
+    float: left;
+  }
+
+  .ul {
+    margin: auto;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: right;
+    margin: 0px;
+    border-radius: 0px;
+    font-size: 24px;
+    font-family: "Scheherazade", serif;
+    text-align: center;
+    float: left;
+    left: -100%;
+    position: relative;
+    transition: all 3.4s ease;
+    display: none;
+  }
+
+  .li {
+    transition: all 0.4s ease;
+
+    display: block;
+    padding: 15px 0;
+    width: 100%;
+  }
+  .li:hover,
+  .li:active {
+    background-color: #57616a;
+  }
+
+  .li:hover .link,
+  .li:active .link {
+    color: white;
+  }
+  .link {
+    text-decoration: none;
+    color: #57616a;
+    padding: 10px 20px;
+    width: 100%;
+    transition: all 0.4s ease;
+  }
+  .checkbtn {
+    font-size: 30px;
+    color: #57616a;
+    padding: 10px 5%;
+    float: left;
+    background-color: white;
+    width: 90%;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  .check {
+    display: none;
+    transition: all 0.4s ease;
+  }
+  .check:checked ~ .ul {
+    left: 0;
+    display: inline;
+  }
+}

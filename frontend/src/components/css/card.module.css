@@ -1,0 +1,54 @@
+.card {
+  width: 100%;
+  background-color: white;
+  float: right;
+  margin: 20px 0 20px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  max-width: 500px;
+}
+
+.title {
+  padding: 3px 20px;
+  float: right;
+  width: 100%;
+  text-align: right;
+  font-size: 22px;
+  color: #57616a;
+  font-family: "Scheherazade", serif;
+}
+.circle {
+  float: left;
+  background-color: tomato;
+  padding: 20px 18px 20px 22px;
+  border-radius: 50%;
+  margin: 0px 20px 20px 20px;
+  font-size: 34px;
+  color: antiquewhite;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+.icon {
+  margin: 105px;
+  width: 100%;
+  position: absolute;
+  left: 10px;
+  top: -30px;
+  float: left;
+  background-color: beige;
+}
+.number {
+  float: right;
+  text-align: right;
+  padding: 20px 25px;
+  font-size: 40px;
+  width: 60%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .card {
+    width: 100%;
+    max-width: 100%;
+  }
+}

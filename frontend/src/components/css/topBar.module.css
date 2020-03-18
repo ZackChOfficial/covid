@@ -1,0 +1,61 @@
+.topBar {
+  width: 100%;
+  background-color: #1e3853;
+  font-size: 12px;
+  padding: 0px;
+  color: #eeeeee;
+  font-family: "Scheherazade", serif;
+  font-weight: 100;
+  float: left;
+  box-sizing: border-box;
+}
+h1 {
+  display: inline;
+}
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+  position: relative;
+  padding-right: 40px;
+}
+
+.circle {
+  height: 25px;
+  width: 25px;
+  background-color: rgba(16, 172, 132, 0.6);
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-55%);
+}
+
+.circle::before {
+  content: "";
+  height: 12px;
+  width: 12px;
+  background-color: #1dd1a1;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-55%) translateX(-55%);
+  right: 0;
+  animation: bip 0.8s infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+}
+
+@keyframes bip {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: #1dd1a1;
+  }
+}
