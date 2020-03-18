@@ -4,6 +4,7 @@ import EmptyBar from "./components/emptybar";
 import NavBar from "./components/navbar";
 import MobNavBar from "./components/mobnavbar";
 import Home from "./pages/home";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <NavBar />
       <MobNavBar />
       <Home />
+      <Footer />
     </div>
   );
 }
