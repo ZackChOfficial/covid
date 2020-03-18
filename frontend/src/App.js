@@ -4,17 +4,33 @@ import EmptyBar from "./components/emptybar";
 import NavBar from "./components/navbar";
 import MobNavBar from "./components/mobnavbar";
 import Home from "./pages/home";
+import Advices from "./pages/advices/AdvicesContainer";
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Link
+} from "react-router-dom";
 
 function App() {
-  return (
-    <div>
-      <TopBar />
-      <EmptyBar />
-      <NavBar />
-      <MobNavBar />
-      <Home />
-    </div>
-  );
+	return (
+		<div>
+			<Router>
+				<TopBar />
+				<EmptyBar />
+				<NavBar />
+				<MobNavBar />
+				<Switch>
+					<Route exact path="/">
+						<Home />
+					</Route>
+					<Route exact path="/advices">
+						<Advices />
+					</Route>
+				</Switch>
+			</Router>
+		</div>
+	);
 }
 
 export default App;
