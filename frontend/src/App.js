@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import TopBar from "./components/topBar";
 import EmptyBar from "./components/emptybar";
 import NavBar from "./components/navbar";
@@ -19,10 +19,21 @@ import {
 } from "react-router-dom";
 
 function App() {
+  const [data, setData] = useState(null);
+  const [date, setDate] = useState(null);
+  let url = "http://localhost:3001/";
+  useEffect(() => {
+    fetch(url + "data")
+      .then(res => res.json())
+      .then(data => setData(data));
+    fetch(url + "date")
+      .then(res => res.json())
+      .then(data => setDate(data));
+  }, [url]);
   return (
     <div>
       <Router>
-        <TopBar />
+        <TopBar date={date} />
         <EmptyBar />
         <NavBar />
         <MobNavBar />
@@ -31,7 +42,7 @@ function App() {
             <Redirect to="/home" />
           </Route>
           <Route exact path="/home">
-            <Home />
+            <Home data={data} />
           </Route>
           <Route exact path="/protection">
             <Advices />
