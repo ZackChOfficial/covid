@@ -1,0 +1,18 @@
+.notfound {
+  margin: 80px 0;
+  float: left;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.notfound img {
+  text-align: center;
+  margin: auto;
+  border: 5px solid #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1100px;
+}
