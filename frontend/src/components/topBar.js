@@ -1,10 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./css/topBar.module.css";
 
 export default function TopBar(props) {
-  useEffect(() => {
-    console.log(props);
-  }, []);
   return (
     <div className={styles.topBar}>
       <h1 className={styles.left}>{props.date ? props.date.Date : ""} تحديث</h1>

@@ -10,6 +10,7 @@ import Footer from "./components/footer";
 import Notfound from "./pages/notfound";
 import Map from "./pages/map";
 import Sources from "./pages/sources";
+import Data from "./db.json";
 
 import {
   BrowserRouter as Router,
@@ -21,18 +22,10 @@ import {
 function App() {
   const [data, setData] = useState(null);
   const [date, setDate] = useState(null);
-  let url = "http://206.189.226.102:3001/";
   useEffect(() => {
-    fetch(url + "data")
-      .then(res => res.json())
-      .then(data => {
-        setData(data);
-        console.log(data);
-      });
-    fetch(url + "date")
-      .then(res => res.json())
-      .then(data => setDate(data));
-  }, [url]);
+    setData(Data.data);
+    setDate(Data.date);
+  }, []);
   return (
     <div>
       <Router>
