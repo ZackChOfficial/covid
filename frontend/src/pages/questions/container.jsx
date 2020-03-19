@@ -8,12 +8,14 @@ import questionsData from "./data";
 
 const useStyles = makeStyles(theme => ({
 	root: {
-		margin: "0 5rem",
-		paddingTop: "200px"
+		padding: "200px 5rem",
+		[theme.breakpoints.down("sm")]: {
+			padding: "7rem 0"
+		}
 	},
 	heading: {
 		fontSize: theme.typography.pxToRem(17),
-		//fontWeight: theme.typography.fontWeightRegular,
+		fontWeight: theme.typography.fontWeightBold,
 		textAlign: "right"
 	},
 	question: {
@@ -22,6 +24,7 @@ const useStyles = makeStyles(theme => ({
 		border: "2px solide red",
 		width: "100%"
 	}
+
 }));
 
 export default function SimpleExpansionPanel() {
@@ -34,7 +37,7 @@ export default function SimpleExpansionPanel() {
 					<ExpansionPanel>
 						<ExpansionPanelSummary>
 							<div className={classes.question} >
-								<Typography variant="h2" className={classes.heading}>{q.question}</Typography>
+								<Typography variant="h1" className={classes.heading}>{q.question}</Typography>
 							</div>
 						</ExpansionPanelSummary>
 						<ExpansionPanelDetails>

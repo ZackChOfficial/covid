@@ -1,13 +1,17 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
 	container: {
-		border: "1px solid #FFF",
 		paddingTop: "2rem",
+		padding: "4rem",
 		display: "flex",
 		flexDirection: "row-reverse",
 		justifyContent: "center",
-		flexWrap: "wrap"
+		flexWrap: "wrap",
+		[theme.breakpoints.down("sm")]: {
+			padding: "2rem 0.5rem"
+		}
+
 	},
 	card: {
 		width: "400px",
@@ -35,6 +39,6 @@ const useStyles = makeStyles({
 		textAlign: "right",
 		margin: "10%"
 	}
-});
+}));
 
 export default useStyles;
