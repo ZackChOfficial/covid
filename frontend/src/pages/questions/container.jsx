@@ -13,8 +13,8 @@ const useStyles = makeStyles(theme => ({
 		paddingTop: "200px"
 	},
 	heading: {
-		fontSize: theme.typography.pxToRem(15),
-		fontWeight: theme.typography.fontWeightRegular,
+		fontSize: theme.typography.pxToRem(17),
+		//fontWeight: theme.typography.fontWeightRegular,
 		textAlign: "right"
 	},
 	question: {
@@ -35,7 +35,7 @@ export default function SimpleExpansionPanel() {
 					<ExpansionPanel>
 						<ExpansionPanelSummary>
 							<div className={classes.question} >
-								<Typography className={classes.heading}>{q.question}</Typography>
+								<Typography variant="h2" className={classes.heading}>{q.question}</Typography>
 							</div>
 						</ExpansionPanelSummary>
 						<ExpansionPanelDetails>

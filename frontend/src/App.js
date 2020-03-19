@@ -24,7 +24,7 @@ function App() {
 				<MobNavBar />
 				<Switch>
 					<Route exact path="/">
-						<Redirect to="/questions" />
+						<Redirect to="/home" />
 					</Route>
 					<Route exact path="/home">
 						<Home />
