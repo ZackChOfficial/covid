@@ -16,34 +16,12 @@ function MobNavBar({ history }) {
         <li className={styles.li}>
           <Link
             onClick={() => {
-              history.push("/map");
+              history.push("/home");
             }}
-            to="/map"
+            to="/home"
             className={styles.link}
           >
-            خريطة الاصابات
-          </Link>
-        </li>
-        <li className={styles.li}>
-          <Link
-            onClick={() => {
-              history.push("/sources");
-            }}
-            to="/sources"
-            className={styles.link}
-          >
-            مصادر مهمة
-          </Link>
-        </li>
-        <li className={styles.li}>
-          <Link
-            onClick={() => {
-              history.push("/questions");
-            }}
-            to="/questions"
-            className={styles.link}
-          >
-            الاسئلة الشائعة
+            الرئيسية
           </Link>
         </li>
         <li className={styles.li}>
@@ -60,12 +38,34 @@ function MobNavBar({ history }) {
         <li className={styles.li}>
           <Link
             onClick={() => {
-              history.push("/home");
+              history.push("/questions");
             }}
-            to="/home"
+            to="/questions"
             className={styles.link}
           >
-            الرئيسية
+            الاسئلة الشائعة
+          </Link>
+        </li>
+        <li className={styles.li}>
+          <Link
+            onClick={() => {
+              history.push("/sources");
+            }}
+            to="/sources"
+            className={styles.link}
+          >
+            مصادر مهمة
+          </Link>
+        </li>
+        <li className={styles.li}>
+          <Link
+            onClick={() => {
+              history.push("/map");
+            }}
+            to="/map"
+            className={styles.link}
+          >
+            خريطة الاصابات
           </Link>
         </li>
       </ul>

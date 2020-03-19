@@ -4,7 +4,7 @@ import Card from "../components/card";
 import {
   faProcedures,
   faFirstAid,
-  faCheckCircle,
+  faPlus,
   faDizzy
 } from "@fortawesome/free-solid-svg-icons";
 import Phone from "../components/phone";
@@ -31,7 +31,7 @@ export default function Home(props) {
               <Col lg={6} md={12}>
                 <Card
                   title="المتعافون"
-                  number={props.data ? props.data.Recoverers : ""}
+                  number={props.data ? props.data.recovered : ""}
                   icon={faFirstAid}
                   bg="#A2E6F4"
                   color="#2E86DE"
@@ -39,17 +39,17 @@ export default function Home(props) {
               </Col>
               <Col lg={6} md={12}>
                 <Card
-                  title="الحالات المستبعدة"
-                  number={props.data ? props.data.Excluded : ""}
-                  icon={faCheckCircle}
-                  bg="#A9EDDB"
-                  color="#32BEA6"
+                  title="حالات اليوم"
+                  number={props.data ? props.data.todayCases : ""}
+                  icon={faPlus}
+                  bg="rgba(255, 118, 117, 0.6)"
+                  color="#D31029"
                 />
               </Col>
               <Col lg={6} md={12}>
                 <Card
                   title="الوفيات"
-                  number={props.data ? props.data.death : ""}
+                  number={props.data ? props.data.deaths : ""}
                   icon={faDizzy}
                   bg="#BFC4CA"
                   color="#4E5366"
