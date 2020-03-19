@@ -28,12 +28,12 @@ export default function MobNavBar() {
             </Link>
           </li>
           <li className={styles.li}>
-            <Link to="/about" className={styles.link}>
+            <Link to="/protection" className={styles.link}>
               طرق الوقاية
             </Link>
           </li>
           <li className={styles.li}>
-            <Link to="/dashboard" className={styles.link}>
+            <Link to="/home" className={styles.link}>
               الرئيسية
             </Link>
           </li>
