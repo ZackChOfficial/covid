@@ -3,7 +3,9 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles(theme => ({
   container: {
     paddingTop: "2rem",
-    padding: "4rem",
+    width: "90%",
+    margin: "0 5%",
+    float: "left",
     display: "flex",
     flexDirection: "row-reverse",
     justifyContent: "center",
@@ -22,11 +24,12 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-around",
-    transition: "all .3s",
+    transition: "all .2s",
     "&:hover": {
       boxShadow: "0 4px 10px rgba(0, 0, 0, 0.07)",
-      transform: "scale(1.03) translate(-3px, -2px)",
-      border: "2px solid #01a3a4"
+      border: "2px solid #01a3a4",
+      width: "390px",
+      height: "590px"
     }
   },
   cardImg: {
