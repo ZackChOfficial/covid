@@ -1,11 +1,11 @@
 {
   "date": {
-    "Date": "19/03/2020 17:30"
+    "Date": "19/03/2020 22:30"
   },
   "data": {
     "Recoverers": 2,
-    "cases": 61,
-    "Excluded": 273,
+    "cases": 63,
+    "Excluded": 307,
     "death": 2
   }
 }

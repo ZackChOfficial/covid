@@ -14,7 +14,10 @@ function createData(name, link) {
 
 const rows = [
   createData("وزارة الصحة", "https://www.sante.gov.ma/Pages/Accueil.aspx"),
-  createData("مرصد الأخبار الرسمية حول كورونا 19 بالمغرب", "http://c19.ma/"),
+  createData(
+    "مرصد الأخبار الرسمية حول كورونا 19 بالمغرب",
+    "http://www.covidmaroc.ma/"
+  ),
   createData("Agence MAP", "https://twitter.com/MAP_Information")
 ];
 

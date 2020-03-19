@@ -18,7 +18,7 @@ export default function Phone() {
           <PhoneCard tele="150" text="الاسعاف" />
         </Col>
         <Col xs={12} sm={12} md={6} lg={6} xl={3}>
-          <PhoneCard tele="177" text="الدرك الملكي" />
+          <PhoneCard tele="141" text="المساعدة الطبية الاستعجالية" />
         </Col>
       </Row>
     </div>
