@@ -25,7 +25,10 @@ function App() {
   useEffect(() => {
     fetch(url + "data")
       .then(res => res.json())
-      .then(data => setData(data));
+      .then(data => {
+        setData(data);
+        console.log(data);
+      });
     fetch(url + "date")
       .then(res => res.json())
       .then(data => setDate(data));
