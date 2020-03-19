@@ -1,6 +1,7 @@
 .home {
   width: 90%;
-  margin: auto;
+  margin: 0 5%;
+  float: left;
 }
 .cardContainer {
   float: left;
