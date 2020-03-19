@@ -1,0 +1,12 @@
+.map {
+  width: 90%;
+  height: 700px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.mapcontainer {
+  width: 100%;
+  text-align: center;
+  height: 400px;
+}
