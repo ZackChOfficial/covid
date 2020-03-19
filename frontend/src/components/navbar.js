@@ -1,7 +1,9 @@
 import React from "react";
 import styles from "./css/navbar.module.css";
 import { BrowserRouter as Router, Link } from "react-router-dom";
-export default function NavBar() {
+import { withRouter } from "react-router-dom";
+
+function NavBar({history}) {
   return (
     <div className={styles.navbar}>
       <Router>
@@ -16,18 +18,18 @@ export default function NavBar() {
               مصادر مهمة
             </Link>
           </li>
-          <li className={styles.li}>
-            <Link to="/" className={styles.link}>
+          <li className={styles.li} >
+            <Link onClick={() => {history.push("/questions")}} className={styles.link}>
               الاسئلة الشائعة
             </Link>
           </li>
           <li className={styles.li}>
-            <Link to="/about" className={styles.link}>
+            <Link onClick={() => {history.push("/protection")}} className={styles.link}>
               طرق الوقاية
             </Link>
           </li>
           <li className={styles.li}>
-            <Link to="/dashboard" className={styles.link}>
+            <Link onClick={() => {history.push("/home")}} className={styles.link}>
               الرئيسية
             </Link>
           </li>
@@ -36,3 +38,5 @@ export default function NavBar() {
     </div>
   );
 }
+
+export default withRouter(NavBar);
