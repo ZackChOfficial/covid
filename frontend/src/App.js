@@ -21,7 +21,7 @@ import {
 function App() {
   const [data, setData] = useState(null);
   const [date, setDate] = useState(null);
-  let url = "http://localhost:3001/";
+  let url = "http://206.189.226.102:3001/";
   useEffect(() => {
     fetch(url + "data")
       .then(res => res.json())
