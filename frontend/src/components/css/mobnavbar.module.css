@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 814px) {
+@media only screen and (max-width: 934px) {
   .navbar {
     display: block;
     width: 100%;
@@ -28,14 +28,14 @@
 
   .li {
     transition: all 0.4s ease;
-
     display: block;
     padding: 15px 0;
     width: 100%;
   }
   .li:hover,
   .li:active {
-    background-color: #57616a;
+    background-color: #1d8a78;
+    color: #ffffff;
   }
 
   .li:hover .link,
@@ -66,5 +66,24 @@
   .check:checked ~ .ul {
     left: 0;
     display: inline;
+  }
+  .download {
+    border: 3px solid #01a3a4;
+    width: 94%;
+    margin: 0 3%;
+  }
+  .download a {
+    font-family: "Scheherazade", serif;
+    text-decoration: none;
+    color: #01a3a4;
+    position: relative;
+  }
+  .download:hover {
+    transform: scale(1.03);
+    background-color: #048585;
+    cursor: pointer;
+  }
+  .download:hover a {
+    color: #ffffff;
   }
 }

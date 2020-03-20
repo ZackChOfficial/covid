@@ -18,6 +18,7 @@ const rows = [
     "مرصد الأخبار الرسمية حول كورونا 19 بالمغرب",
     "http://www.covidmaroc.ma/"
   ),
+  createData("الموقع الخاص بالبلاغات المتعلقة بفيروس كورونا المستجد", "http://covid19.interieur.gov.ma/"),
   createData("Agence MAP", "https://twitter.com/MAP_Information")
 ];
 

@@ -7,6 +7,14 @@ function NavBar({ history }) {
   return (
     <div className={styles.navbar}>
       <ul className={styles.ul}>
+        <li className={`${styles.li} ${styles.download}`}>
+          <a
+            href="http://covid19.interieur.gov.ma/assets/files/attestation_confinement_ar.pdf"
+            target="blank"
+          >
+            تحميل الاستمارة{" "}
+          </a>
+        </li>
         <li className={styles.li}>
           <Link
             onClick={() => {

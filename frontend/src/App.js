@@ -10,8 +10,8 @@ import Footer from "./components/footer";
 import Notfound from "./pages/notfound";
 import Map from "./pages/map";
 import Sources from "./pages/sources";
-import Data from "./db.json";
 import covid from "novelcovid";
+import ReactGA from "react-ga";
 
 import {
   BrowserRouter as Router,
@@ -22,19 +22,20 @@ import {
 
 function App() {
   const [data, setData] = useState(null);
-  const [date, setDate] = useState(null);
+  function initializeReactGA() {
+    ReactGA.initialize("UA-161427628-1");
+    ReactGA.pageview("/home");
+  }
   useEffect(() => {
     covid
       .countries()
       .then(res => setData(res.find(o => o.country === "Morocco")));
-
-    setData(Data.data);
-    setDate(Data.date);
+    initializeReactGA();
   }, []);
   return (
     <div>
       <Router>
-        <TopBar date={date} />
+        <TopBar />
         <EmptyBar />
         <NavBar />
         <MobNavBar />

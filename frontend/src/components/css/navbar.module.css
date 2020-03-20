@@ -11,6 +11,7 @@
   text-align: right;
   margin-top: -25px;
   border-radius: 5px;
+  position: relative;
   font-size: 24px;
   font-family: "Scheherazade", serif;
   box-shadow: 0 2px 20px 0px rgba(0, 0, 0, 0.08);
@@ -20,10 +21,10 @@
   display: inline-block;
   padding: 15px;
   transition: all 0.3s ease;
-  border-radius: 5px
+  border-radius: 5px;
 }
 .li:hover {
-  background-color: #32bea6;
+  background-color: #06c2c2;
   color: #ffffff;
   transition: all 0.3s ease;
 }
@@ -35,8 +36,25 @@
   color: #57616a;
   padding: 10px 20px;
 }
+.download {
+  background-color: #01a3a4;
+  padding: 5px 10px;
+  color: #ffffff;
+  margin: 0 10px;
+}
+.download a {
+  font-family: "Scheherazade", serif;
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+}
+.download:hover {
+  transform: scale(1.03);
+  background-color: #048585;
+  cursor: pointer;
+}
 
-@media only screen and (max-width: 814px) {
+@media only screen and (max-width: 934px) {
   .navbar {
     display: none;
   }
