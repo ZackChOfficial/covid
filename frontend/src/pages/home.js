@@ -12,7 +12,7 @@ import Msg from "../components/msg";
 import Tweet from "../components/tweet";
 import { Row, Col } from "react-grid-system";
 import Rib from "../components/rib";
-import Radio from "../components/radio";
+
 export default function Home(props) {
   return (
     <div className={styles.home}>
@@ -67,7 +67,6 @@ export default function Home(props) {
       </Row>
       <Phone />
       <Msg />
-      <Radio />
       <Rib />
     </div>
   );

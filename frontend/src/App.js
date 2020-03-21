@@ -12,6 +12,7 @@ import Map from "./pages/map";
 import Sources from "./pages/sources";
 import covid from "novelcovid";
 import ReactGA from "react-ga";
+import Radio from "./components/radio";
 
 import {
   BrowserRouter as Router,
@@ -63,6 +64,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
+      <Radio />
       <Footer />
     </div>
   );
