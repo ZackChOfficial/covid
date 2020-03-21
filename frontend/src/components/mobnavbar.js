@@ -24,6 +24,7 @@ function MobNavBar({ history }) {
         <li className={styles.li}>
           <Link
             onClick={() => {
+              document.getElementById("check").checked = false;
               history.push("/home");
             }}
             to="/home"
@@ -35,6 +36,7 @@ function MobNavBar({ history }) {
         <li className={styles.li}>
           <Link
             onClick={() => {
+              document.getElementById("check").checked = false;
               history.push("/protection");
             }}
             to="/protection"
@@ -46,6 +48,7 @@ function MobNavBar({ history }) {
         <li className={styles.li}>
           <Link
             onClick={() => {
+              document.getElementById("check").checked = false;
               history.push("/questions");
             }}
             to="/questions"
@@ -57,6 +60,7 @@ function MobNavBar({ history }) {
         <li className={styles.li}>
           <Link
             onClick={() => {
+              document.getElementById("check").checked = false;
               history.push("/sources");
             }}
             to="/sources"
@@ -68,6 +72,7 @@ function MobNavBar({ history }) {
         <li className={styles.li}>
           <Link
             onClick={() => {
+              document.getElementById("check").checked = false;
               history.push("/map");
             }}
             to="/map"
