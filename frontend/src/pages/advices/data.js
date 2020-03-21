@@ -2,7 +2,8 @@ import HandWashLogo from './logos/handwash.png';
 import DontTouchLogo from './logos/dontTouch.png';
 import SeparateLogo from './logos/quarantine.png';
 import CoughLogo from './logos/cough.png';
-
+import Infection from './logos/infektion.png';
+import StayHome from './logos/stayHome.png';
 
 const advicesData = [
 	{
@@ -20,6 +21,14 @@ const advicesData = [
 	{
 		logo: CoughLogo,
 		text: "تغطية الفم والأنف عند العطس أو السعال وغسل اليدين بعدها لمنع انتشار الفيروس"
+	},
+	{
+		logo: Infection,
+		text: "اجتناب التجمعات و الإحتكاك المباشر مع الأشخاص عن طريق المصافحة، العناق أو التقبيل"
+	},
+	{
+		logo: StayHome,
+		text: "التزام المكوث في المنزل وعدم الخروج إلى عند الضرورة (التبضع، التطبيب، الإلتحاق بالعمل ...)"
 	}
 ]
 
