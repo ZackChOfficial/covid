@@ -4,7 +4,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     padding: "60px 5%",
     [theme.breakpoints.down("sm")]: {
-      padding: "7rem 0"
+      padding: "5rem 5%"
     },
     width: "90%",
     float: "right"

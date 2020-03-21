@@ -5,7 +5,7 @@
   background-color: #01a3a4;
 }
 
-@media only screen and (max-width: 814px) {
+@media only screen and (max-width: 934px) {
   .empty {
     display: none;
   }
