@@ -1,0 +1,15 @@
+{
+  "redis": {
+    "host": "localhost",
+    "password": ""
+  },
+  "keys": {
+    "all": "covidapi:all",
+    "countries": "covidapi:countries",
+    "states": "covidapi:states",
+    "jhu": "covidapi:jhu",
+    "historical": "covidapi:historical"
+  },
+  "port": 8080,
+  "interval": 20000
+}
