@@ -10,7 +10,6 @@ import Footer from "./components/footer";
 import Notfound from "./pages/notfound";
 import Map from "./pages/map";
 import Sources from "./pages/sources";
-import covid from "novelcovid";
 import ReactGA from "react-ga";
 import Radio from "./components/radio";
 
@@ -25,12 +24,13 @@ function App() {
   const [data, setData] = useState(null);
   function initializeReactGA() {
     ReactGA.initialize("UA-161427628-1");
-    ReactGA.pageview("/home");
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }
   useEffect(() => {
-    covid
-      .countries()
-      .then(res => setData(res.find(o => o.country === "Morocco")));
+    fetch("http://localhost:8080/countries/morocco")
+      .then(res => res.json())
+      .then(res => setData(res))
+      .catch(er => console.log(er));
     initializeReactGA();
   }, []);
   return (
