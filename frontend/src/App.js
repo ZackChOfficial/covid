@@ -27,7 +27,7 @@ function App() {
     ReactGA.pageview(window.location.pathname + window.location.search);
   }
   useEffect(() => {
-    fetch("http://localhost:8080/countries/morocco")
+    fetch("http://coronamaroc.me:8080/countries/morocco")
       .then(res => res.json())
       .then(res => setData(res))
       .catch(er => console.log(er));

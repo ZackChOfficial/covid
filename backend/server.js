@@ -20,6 +20,7 @@ const keys = config.keys;
 
 const execAll = () => {
   scraper.getCountries(keys, redis);
+  scraper.historical.historical(keys, redis);
 };
 execAll();
 setInterval(execAll, config.interval);
