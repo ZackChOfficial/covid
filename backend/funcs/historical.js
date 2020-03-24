@@ -9,7 +9,7 @@ var historical = async (keys, redis) => {
   let casesResponse, deathsResponse, recResponse;
   try {
     casesResponse = await axios.get(
-      `https://raw.githubusercontent.com/ZackChOfficial/covid/master/time_series_19-covid-Confirmed.csv`
+      `https://raw.githubusercontent.com/brahimElbouziani/zack/master/time_series_19-covid-Confirmed.csv`
     );
     deathsResponse = await axios.get(`${base}time_series_19-covid-Deaths.csv`);
     recResponse = await axios.get(`${base}time_series_19-covid-Recovered.csv`);
